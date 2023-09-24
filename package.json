@@ -1,0 +1,23 @@
+{
+  "name": "omelchenko",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "docker-run": "docker build --tag vue-lab-1:latest . && docker run --rm -p 8080:80 --name vue-lab-1-instance vue-lab-1:latest",
+    "docker-stop": "docker stop vue-lab-1-instance"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "dateformat": "^5.0.3",
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.3",
+    "bootstrap-icons": "^1.11.1",
+    "vite": "^4.4.5"
+  }
+}
